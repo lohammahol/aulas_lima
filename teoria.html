@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principal</title>
+
+    <style> 
+        /* seletor universal */
+        *{
+            margin: 0;
+        }
+        /* seletor de tipo, aplicando em uma tag */
+        p{
+            color:brown;
+        }
+
+        /* seletor de classe */
+        .paragrafo{
+            background-color:chocolate;
+            /* margin: 10px; - aplica em todas as margens*/
+           /* margin: 10px 40px; - aplica nas margens 'Laterais' e 'superior e inferior'*/       
+           margin: 10px 20px 30px 40px; /*aplica margem top, right, bottom, left*/ 
+           margin-left: 10px;
+           /* alinha elementos ao centro */
+           text-align: center;
+        }
+
+        .imagem{
+            width: 150px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<!-- aplicando css inline cor fundo -->
+<body style="background-color: rgb(255, 213, 0);">
+    olá mundo!
+    <!-- titulos de nivel 1 ao 6 -->
+    <h1>Desenvolvimento de sistemas</h1>
+    <h1>cabeçalho de nível 1</h1>
+    <h2>cabeçalho de nível 2</h2>
+    <h3>cabeçalho de nível 3</h3>
+    <h4>cabeçalho de nível 4</h4>
+    <h5>cabeçalho de nível 5</h5>
+    <h6>cabeçalho de nível 6</h6>
+
+    <!-- Insere uma linha na horizontal -->
+    <hr>
+    <!-- A tag 'p' insere um novo parágrafo  -->
+    <p>Este é um         a        parágrafo<p> Outro parágrafo</p></p>
+    <hr>
+    
+    <!-- A tag br quebra uma linha, ela é uma tag sem fechamento -->
+    <p>Este é um texto muito grande,<br>
+        que eu desejo <br> quebrar a linha</p>
+
+    <!-- Inserindo um link para abrir uma página -->
+     <a href="https://www.sesisp.org.br">Pagina do sesi</a>
+    
+    <!-- Link com atributo _blank para abrir em outra janela -->
+    <a href="https: //www.sp.senai.br/" target="_self">senai</a>
+    
+    <!-- Tag img para adicionar uma imagem,o atributo src e preenchido com caminho da imagem -->
+    <img src="https://www.showmetech.com.br/wp-content/uploads//2018/05/deadpool2-jpg-1920x1024.webp">
+    
+    <img src=" img/5e123d904744933ee3894a45b45c72e6.gif">
+
+    <p>Paragrafo com caracter &lt;br&gt;</p>
+    <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent; &delta; &uarr; </p>
+
+    <!-- Para inserir emoji use o hexadecimal do site emojipedia.org e o codigo vai depois do &#x -->
+    
+    <p>Inserindo um emoji &#x1F60A &#x2764</p>
+
+    <!-- Tags para formatação e enfatização do texto -->
+    <b>Texto em negrito</b><br>
+    <strong>Texto importante</strong><br>
+    <h1><i>H1 italico</i></h1><br>
+    <em>Texto enfatizado</em><br>
+    <mark>Texto</mark><br>
+    <h3>Texto <small> menor</small></h3>
+    <del>Texto Excluido </del><br>
+    <ins>Texto Inserido</ins>
+   <p>4<sub>2</sub></p>
+   <p>3<sup>3</sup></p>
+   <u>Texto sublinhado</u>
+
+html lang= "pt-br">
+<body>
+    <p>4<sub>2</sub></p>
+    <p>3<sub>3</sub></p>
+    <u>texto sublinhado</u>
+
+   <!-- Aplicando link em uma imagem-->
+   <a href="https://www.sesisp.org.br" target="_blank"><img src="img/Google_Icons-09-512.webp" alt=""></a>
+  
+   <p style="font-size: 10px;"> Videos do youtube</p>
+   <iframe width="928" height="522" src="https://www.youtube.com/embed/vpNi97wHNX4" title="MC LARANJINHA - BELA E A FERA - DJ JR (CLIPE OFICIAL) Doug Filmes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+   <!-- aplicando css interno -->
+   <p class="paragrafo">
+       Logo do google 
+       <img class="imagem" src="img/Google_Icons-09-512.webp" alt="">
+   </p>
+
+   <!-- listas -->
+   <!-- listas ordenadas -->
+    <ol>
+        <li>acordar</li>
+        <li>tomar banho</li>
+        <li>colocar uniforme</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+        <li>ir para escola</li>
+    </ol>
+    <br>
+
+    <!-- lista ordenada com numero minusculo  -->
+    <ol type="i">
+
+    <li>acordar</li>
+    <li>tomar banho</li>
+    <li>colocar uniforme</li>
+    <li>tomar cafe</li>
+    <li>escovar os dentes</li>
+    <li>ir para escola</li>
+    </ol>
+    <br>
+
+    <ol type="A">
+
+        <li>acordar</li>
+        <li>tomar banho</li>
+        <li>colocar uniforme</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+        <li>ir para escola</li>
+        </ol>
+
+        <!-- lista nao ordenada -->
+        <ul>
+            <li>carvão</li>
+            <li>carne</li>
+            <li>bebidas</li>
+            <li>arroz</li>
+        </ul>
+        <br>
+        <!-- lista dentro de lista -->
+        <ul>
+            <li>carne
+                <ul>
+                    <li>picanha</li>
+                    <li>cupim</li>
+                    <li>ponta de peito</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- lista predefinida -->
+         <dl>
+            <dt>HTML</dt>
+            <dd>linguagem de marcação para conteudo de um site </dd>
+            <dt>CSS</dt>
+            <dd>çinguagem de estilização do site</dd>
+            <dt>javascript</dt>
+            <dd>linguagem de programação</dd>
+         </dl>
+   </body>
+</html>

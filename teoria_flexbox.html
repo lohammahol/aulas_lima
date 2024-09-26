@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <link rel="stylesheet" href="../css/estilo_flexbox.css">
 </head>
+
 <body>
     <h1>Trabalhando com Div</h1>
     <div class="div1">
@@ -27,7 +29,7 @@
     </div>
 
     <h1>Trabalhando com Flexbox</h1>
-    <p>Utilizamos flexbox para posicionar os elementos de uma linha ou coluna 
+    <p>Utilizamos flexbox para posicionar os elementos de uma linha ou coluna
         de forma dinâmica
     </p>
     <p> Por padrão, os elementos são exibidos em bloco (block)</p>
@@ -37,5 +39,108 @@
         <div class="item"> item 3 </div>
         <div class="item"> item 4 </div>
     </section>
+
+    <p>Flex com mais elementos, preenchendo a largura da tela</p>
+    <section class="conteiner">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+        <div class="item"> item 4 </div>
+        <div class="item"> item 5 </div>
+        <div class="item"> item 6 </div>
+        <div class="item"> item 7 </div>
+        <div class="item"> item 8 </div>
+    </section>
+
+    <p>Flex Direction - Alterando a direção do elemento</p>
+    <section class="flex">
+        <div class="div-coluna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKppllY4IQeM0aMwl2U7JxWY9cUfshmWbn-w&s">
+            <p>Wolverine e Dedpool</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHtobZwq3WRIUuRiQlBOWNHh6PfG4Kpbu5g&s">
+            <p> Velozes e Fusiosos </p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYiTVk9KOq_zKDAm6upW7g4KNzJ2YQbGSDxQ&s">
+            <p> Marvel atualizada </p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwexFIWYblAedFIbOhcIepdhh7zW4cm5IzTQ&s">
+            <p> Queda </p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaM52Hsn0OCP3OGUjIGK82roYeVWjG3y5n8A&s">
+            <p> DC </p>
+        </div>
+    </section>
+
+    <p>Flex wrap - Faz a quebra do elemento 
+        quando não ha mais espaço na tela
+    </p>
+    <section class="secao">
+        <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+        <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+        <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+        <img class="secao-imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwexFIWYblAedFIbOhcIepdhh7zW4cm5IzTQ&s" alt="">
+        <img class="secao-imagem" src="https://pa1.aminoapps.com/6671/06b736b8e87ec4c88413e8e18d60c8c217d9e3ca_hq.gif" alt="">
+        <img class="secao-imagem" src="https://i.gifer.com/A8m8.gif" alt="">
+        <img class="secao-imagem" src="https://blog.quizur.com/wp-content/uploads/2024/07/dhdjxlj-be26019b-b192-4b63-b4d0-eed06c715b58.gif" alt="">
+    </section>
+
+    <p>Justify - content - Alinha os itens flex no container de acordo coma direção.</p>
+    <section class="alinhar-esquerda">
+        <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+        <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+        <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+    </section>
+
+    <p>Alinhar centro</p>
+    <section class="alinhar-centro">
+        <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+        <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+        <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+    </section>
+
+    <p>Alinhar direita</p>
+    <section class="alinhar-direita">
+        <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+        <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+        <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+    </section>
+
+    <p>Alinhar os elementos nos 
+        cantos e ajusta ao centro</p>
+        <section class="alinhar-entre">
+            <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+            <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+            <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+            <img class="secao-imagem" src="https://pa1.aminoapps.com/6671/06b736b8e87ec4c88413e8e18d60c8c217d9e3ca_hq.gif" alt="">
+        </section>
+
+        <p>Space-around - Alinhar os elementos a partir do espaço ao redor </p>
+        <section class="alinhar-redor">
+            <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+            <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+            <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+            <img class="secao-imagem" src="https://pa1.aminoapps.com/6671/06b736b8e87ec4c88413e8e18d60c8c217d9e3ca_hq.gif" alt="">
+        </section>
+
+        <p>Espaçamento usando colunas</p>
+        <section class="alinhar-coluna">
+            <img class="secao-imagem" src="https://64.media.tumblr.com/6b27776d0abb8c52e33253610b9ae37a/2f62e02db5ba2f60-24/s540x810/096fef6c36f0f83405bf3eb03e7ab1f3ab40a5aa.gif" alt="">
+            <img class="secao-imagem" src="https://c.tenor.com/DKLQwnoqfJ4AAAAd/explosion-fast-and-furious9.gif" alt="">
+            <img class="secao-imagem" src="https://i.pinimg.com/originals/9e/38/63/9e38630b0d708b11521da6bff4306bc0.gif" alt="">
+            <img class="secao-imagem" src="https://pa1.aminoapps.com/6671/06b736b8e87ec4c88413e8e18d60c8c217d9e3ca_hq.gif" alt="">
+        </section>
+
+        <section class="alinhar-itens-centro">
+              <div> Item 1 </div>
+              <div> Item 2 </div>
+              <div> Item 3 </div>
+              <div> Item 4 </div>
+              <div> Item 5 </div>
+        </section>
 </body>
 </html>

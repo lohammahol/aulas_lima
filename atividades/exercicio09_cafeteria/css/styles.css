@@ -1,15 +1,104 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
+    margin:0 ;
+    padding:0;
     /*Assegura que padding e margin sejam 
     incluidos nas dimensoes totais do elemento*/
     box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: rgb(226, 196, 255);
 }
 
 .logo{
     font-family: Teko;
     font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: blueviolet;
+
+}
+
+.nav{
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.Menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+li{
+    list-style: none;
+    
+}
+
+li > a {
+    color: #ffffff;
+
+
+}
+.acessar{
+    color: #ed0aea;
+    
+}
+
+.banner-cafe{
+    max-width: 1120px;
+    height: 60vh;
+    margin: auto;
+
+}
+
+.banner-cafe > img{
+    width: 100%;
+   margin: auto;
+}
+
+.banner-novidade{
+    max-width: 1120px;
+    height: 60vh;
+    margin: auto;
+    padding: 0rem 2rem;
+    gap: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.banner-conteudo{
+    /*Organizamos o conteudo em coluna*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.banner-imagens{
+    /*Definir largura máxima */
+    max-width: 45%;
+    /*Exibir as imagens em 4 colunas*/
+    column-count: 4;
+}
+
+.banner-imagens > figure > img{
+    width: 100%;
 
 }

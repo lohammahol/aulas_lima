@@ -9,7 +9,7 @@
 }
 body{
     color: #fff;
-    background-color: rgb(226, 196, 255);
+    background-color: rgb(105, 12, 12);
 }
 
 .logo{
@@ -22,7 +22,7 @@ a{
 }
 
 header{
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
 
 }
 
@@ -100,5 +100,156 @@ li > a {
 
 .banner-imagens > figure > img{
     width: 100%;
+    border-radius: 5px;
 
+}
+
+
+/*Criando scrool para cards*/
+
+.card-novo{
+    display: flex;
+    overflow: scroll;
+    gap: 3rem;
+    margin: auto;
+    max-width: 1120px;
+
+}
+
+/*Removendo a barra de scrool*/
+.card-novo::-webkit-scrollbar{
+    display: none;
+
+}
+
+.receitas{
+    /*Organizando em colunas*/
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 2.5rem 2rem;
+    margin: auto;
+}
+
+.cabecalho-card{
+    background-color: #ff0101;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card{
+    margin-left: 40px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 10px 0 px 20px rgba(255,255,255,0.7);
+    max-width: 261px;
+}
+
+.rodape-card{
+    background-color: #000000;
+    padding: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button{
+    width: 80px;
+    background-color: black;
+    color: aqua;
+    border-radius: 8px;
+    padding: 4px;
+
+}
+
+/*MAPA*/
+.mapa{
+    max-width: 1120px;
+    width: 600px;
+    height: 400px;
+
+
+    /*Aplica papel de parede a nossa div*/
+    background-image: url('../img/img/mapa.png');
+    background-repeat: no-repeat;
+    /*Aplica tamanho da imagem em todo o espaço*/
+    background-size: cover;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+.icone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff3647;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font: 18px;
+}
+
+.icone1{
+    top: 20px;
+    left: 100px;
+}
+
+.icone2{
+    top: 100px;
+    left: 220px;
+}
+
+/*Criando um elemento que não ira aparecer na tela*/
+.div-hover{
+    /*Escondendo a imagem*/
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+
+}
+
+.icone:hover .div-hover{
+    /*Mostrando a imagem*/
+    display: block;
+    position: fixed;
+    top: 15%;
+    left: 37%;
+}
+
+/*Estilizando melhores avaliados*/
+
+.conteiner-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.item-galeria {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #ed0aea;
+}
+
+.item-galeira img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3 ease;
+}
+
+.item-galeira img:hover {
+    transform: scale(1.1);
 }

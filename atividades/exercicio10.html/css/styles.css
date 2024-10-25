@@ -1,0 +1,51 @@
+
+*{
+    margin:0 ;
+    padding:0;
+    /*Assegura que padding e margin sejam 
+    incluidos nas dimensoes totais do elemento*/
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: rgb(97, 183, 40);
+}
+
+.logo{
+    font-family: Teko;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+
+}
+
+.nav{
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.Menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+li{
+    list-style: none;
+    
+}
+
+

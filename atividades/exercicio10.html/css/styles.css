@@ -48,4 +48,12 @@ li{
     
 }
 
+.imagem-logo {
+    height: 65px;
+    width: 75px;
+}
 
+.alinhando-cantores {
+    display: flex;
+    justify-content: center;
+}
